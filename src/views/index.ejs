@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <meta charset="UTF-8">
+  <title>Películas</title>
+</head>
+<body>
+  <h1>Películas</h1>
+  <ul>
+    <% peliculas.forEach((pelicula) => { %>
+      <li>
+        <strong>Nombre:</strong> <%= pelicula.nombre %><br>
+        <strong>Duración:</strong> <%= pelicula.duracion %><br>
+        <strong>Género:</strong> <%= pelicula.genero %><br>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
